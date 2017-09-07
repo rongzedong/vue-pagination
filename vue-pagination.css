@@ -1,0 +1,36 @@
+.vue-pagination ul,.vue-pagination li{
+    margin: 0px;
+    padding: 0px;
+}
+.vue-pagination li{
+    list-style: none
+}
+.vue-pagination li:first-child>a {
+   margin-left: 0px
+}
+.vue-pagination a{
+    border: 1px solid #ddd;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    cursor: pointer
+}
+.vue-pagination a:hover{
+    background-color: #eee;
+}
+.vue-pagination .active a{
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.vue-pagination i{
+    font-style:normal;
+    color: #d44950;
+    margin: 0px 4px;
+    font-size: 12px;
+}
