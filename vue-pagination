@@ -14,15 +14,6 @@
 
 <script>
 export default {
-    props: {
-      cur: {
-        type: [String, Number],
-        required: true
-      },
-      all: {
-        type: [String, Number],
-        required: true
-      },
 
     props: {
       page_cur: {
