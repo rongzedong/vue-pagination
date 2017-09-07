@@ -7,13 +7,13 @@
 </head>
 <body>
   <div id="app">
-  <vue-nav :cur="cur" :all="all" :callback="callback"></vue-nav>
+  <vue-nav :page_cur="cur" :page_total="all" :on_click="callback"></vue-nav>
     <p>{{msg}}</p>
   </div>
 <script src="vue2.js"></script>
-<script src="vue-nav.js"></script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
+        import vue_pagination from "vue_pagination.vue";
   var app = new Vue({
       el: '#app',
       data:{
@@ -22,7 +22,7 @@
         msg: ''
       },
       components:{
-        'vue-nav': Vnav
+        'vue-nav': vue_pagination
       },
       methods:{
         callback(data) {
